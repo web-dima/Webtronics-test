@@ -1,0 +1,35 @@
+@use "vars";
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: vars.$mainBg;
+    color: vars.$white;
+    /*font-family: sans-serif;*/
+    font-family: 'Clash Display', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1265px;
+    padding: 0 25px;
+    margin: 0 auto;
+    font-weight: bold;
+}
