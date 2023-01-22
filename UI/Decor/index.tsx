@@ -22,13 +22,13 @@ const Decor: FC = ()=> {
             <Star type={StarType.NORMAL} top={2694} left={1623.18}/>
             <Star type={StarType.LITTLE} top={1447.12} left={1351.01}/>
             <Star type={StarType.BIG} top={1523.38} left={1598.37}/>
-            <Star type={StarType.BIG} top={155} left={1274.02} light/>
+            <Star type={StarType.BIG} top={633} left={1293.02} light/>
             <Star type={StarType.NORMAL} top={790} left={588.1}/>
             <Star type={StarType.NORMAL} top={1136.08} left={355.27}/>
             <Star type={StarType.LITTLE} top={750} left={1247.77}/>
             <Star type={StarType.LITTLE} top={737} left={982.77}/>
 
-
+{/*ДИЗАЙНЕР ДАУН Я ЕГО МАМУ ТРОГА Л БЛЯТЬ НАХУЯ БЫЛО ЭТУ ХУЕТУ ДЕЛАТЬ СО ЗВЕЗДОЧКАМИ БЛЯ И КРУЖОЧКАМИ*/}
 
             <Light top={1256} left={1468} />
             <Light top={499} left={293} />

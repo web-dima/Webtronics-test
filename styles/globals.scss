@@ -15,6 +15,7 @@ body {
     color: vars.$white;
     /*font-family: sans-serif;*/
     font-family: 'Clash Display', sans-serif;
+    height: 6000px;
 }
 
 ul {
@@ -43,5 +44,12 @@ h1,h2,h3,h4 {
     position: relative;
     z-index: 1;
     background-image: url("../public/assets/img/bg.png");
+    background-repeat: no-repeat;
+}
+
+.star-wrapper {
+    position: relative;
+    z-index: 1;
+    background-image: url("../public/assets/img/starbg.png");
     background-repeat: no-repeat;
 }

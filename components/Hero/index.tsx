@@ -39,7 +39,7 @@ const Hero: FC = () => {
             <div className={styles.hero__bottom}>
                 <H3 className={styles.hero__bottom__title} marginBottom={0} text={"Courses"} />
             </div>
-            <Decor />
+            {/*<Decor />*/}
         </div>
     )
 }

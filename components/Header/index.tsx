@@ -1,6 +1,7 @@
 import {FC} from "react";
 import styles from "./Header.module.scss"
 import Image from "next/image";
+import Decor from "../../UI/Decor";
 
 const Header: FC = () => {
     return (
@@ -19,6 +20,7 @@ const Header: FC = () => {
                     </ul>
                 </nav>
             </div>
+            {/*<Decor />*/}
         </header>
     )
 }
