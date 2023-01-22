@@ -1,0 +1,35 @@
+@use '../../styles/vars';
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  color: #0A1482;
+  font-weight: 500;
+  font-size: 20px;
+  width: 100%;
+  line-height: 24px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  border: 0;
+  text-align: center;
+  background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+  cursor: pointer;
+
+  transition: color .2s ease, transform .2s ease;
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &:active {
+    color: vars.$white !important;
+    transform: scale(.95) !important;
+  }
+
+  &:hover {
+    color: #3B48D0;
+    transform: scale(.99);
+  }
+}
+
+

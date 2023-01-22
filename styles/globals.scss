@@ -25,6 +25,11 @@ ul {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
 }
 
 .container {
@@ -32,4 +37,11 @@ a {
     padding: 0 25px;
     margin: 0 auto;
     font-weight: bold;
+}
+
+.background-wrapper {
+    position: relative;
+    z-index: 1;
+    background-image: url("../public/assets/img/bg.png");
+    background-repeat: no-repeat;
 }

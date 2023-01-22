@@ -1,27 +1,31 @@
 
+.hero {
+  margin-top: 165px;
 
-.header {
-  padding: 38px 5px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-
-  &__inner {
+  &__top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    &__title {
+       margin-right: 57px;
+       flex: 65%;
+    }
+    &__text {
+      flex: 30%;
+    }
   }
 
-  &__nav {
-      display: flex;
-      list-style: none;
+  &__center {
+    display: flex;
+    align-items: center;
 
-      &__item {
-        margin-right: 48px;
-        :last-child {
-          margin-right: 10px;
-        }
-      }
+    &__btn {
+      margin-right: 24px;
     }
+  }
+
+  &__bottom {
+    &__title {
+      text-align: right;
+    }
+  }
 }

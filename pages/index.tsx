@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import {NextPage} from "next";
-import Header from "../components/Header/Header"
-import Hero from "../components/Hero/Header";
+import Header from "../components/Header"
+import Hero from "../components/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +12,11 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className="container">
-            <Header/>
-            <Hero/>
+        <div className="background-wrapper">
+            <div className="container">
+                <Header/>
+                <Hero/>
+            </div>
         </div>
     </>
   )
