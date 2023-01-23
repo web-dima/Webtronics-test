@@ -2,24 +2,21 @@ import {FC} from "react";
 import styles from "./Hero.module.scss"
 import Text from "../../UI/Text";
 import Btn from "../../UI/Btn";
-import {H1, H3} from "../../UI/Titles";
-import LightCanvas from "../../UI/LightCanvas";
-import LightDecor from "../../types/decor.interface";
-import Decor from "../../UI/Decor";
+import {H1, H3, TitleAlign} from "../../UI/Titles";
 
 
-const lights: LightDecor[] = [
-    {
-        id: 1,
-        left: 293,
-        top: 499
-    },
-    {
-        id: 2,
-        left: 1424,
-        top: 388
-    }
-]
+// const lights: LightDecor[] = [
+//     {
+//         id: 1,
+//         left: 293,
+//         top: 499
+//     },
+//     {
+//         id: 2,
+//         left: 1424,
+//         top: 388
+//     }
+// ]
 
 
 const Hero: FC = () => {
@@ -37,9 +34,8 @@ const Hero: FC = () => {
                 <H1 marginBottom={0} text={"Developer"} />
             </div>
             <div className={styles.hero__bottom}>
-                <H3 className={styles.hero__bottom__title} marginBottom={0} text={"Courses"} />
+                <H3 align={TitleAlign.RIGHT} marginBottom={0} text={"Courses"} />
             </div>
-            {/*<Decor />*/}
         </div>
     )
 }

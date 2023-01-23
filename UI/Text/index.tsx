@@ -10,12 +10,14 @@ export enum AlignProperty {
 interface TitleProps {
     text: string,
     align?: AlignProperty
-    className?: string
+    className?: string,
+    fontSize?: number
 }
 
-const Text: FC<TitleProps> = ({text,align,className})=> {
+const Text: FC<TitleProps> = ({text,align,className,fontSize})=> {
     const style = {
-        textAlign:align
+        textAlign:align,
+        fontSize: fontSize ? fontSize : ""
     }
     return(
         <span className={`${styles.text} ${className? className: ""}`} style={style}>{text}</span>

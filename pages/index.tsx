@@ -2,6 +2,8 @@ import Head from 'next/head'
 import {NextPage} from "next";
 import Header from "../components/Header"
 import Hero from "../components/Hero";
+import Decor from "../UI/Decor";
+import About from "../components/About";
 
 const Home: NextPage = () => {
   return (
@@ -13,12 +15,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <div className="background-wrapper">
-            <div className="star-wrapper">
+            {/*<div className="star-wrapper">*/}
                 <div className="container">
+                    <Decor />
                     <Header/>
                     <Hero/>
+                    <About />
                 </div>
-            </div>
+            {/*</div>*/}
         </div>
     </>
   )

@@ -1,11 +1,12 @@
 import {FC} from "react";
 import styles from "./H2.module.scss"
-import {TitleProps} from "../index";
+import {TitleAlign, TitleProps} from "../index";
 
 
-const H2: FC<TitleProps> = ({text,marginBottom,className})=> {
+const H2: FC<TitleProps> = ({text,marginBottom,className, align})=> {
     const style = {
-        marginBottom:marginBottom
+        marginBottom:marginBottom,
+        textAlign: align ? align : TitleAlign.LEFT
     }
     return(
         <h2 className={`${styles.title} ${className? className: ""}`} style={style}>{text}</h2>

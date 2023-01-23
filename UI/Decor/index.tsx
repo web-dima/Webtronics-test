@@ -2,7 +2,11 @@ import {FC} from "react";
 import styles from "./Decor.module.scss"
 import Star, {StarType} from "../Star";
 import Light from "../Light";
-
+// export interface LightDecor {
+//         id: number,
+//         left: number,
+//         top: number
+// }
 const Decor: FC = ()=> {
     return(
         <div className={styles.Decor}>
@@ -27,8 +31,6 @@ const Decor: FC = ()=> {
             <Star type={StarType.NORMAL} top={1136.08} left={355.27}/>
             <Star type={StarType.LITTLE} top={750} left={1247.77}/>
             <Star type={StarType.LITTLE} top={737} left={982.77}/>
-
-{/*ДИЗАЙНЕР ДАУН Я ЕГО МАМУ ТРОГА Л БЛЯТЬ НАХУЯ БЫЛО ЭТУ ХУЕТУ ДЕЛАТЬ СО ЗВЕЗДОЧКАМИ БЛЯ И КРУЖОЧКАМИ*/}
 
             <Light top={1256} left={1468} />
             <Light top={499} left={293} />

@@ -43,13 +43,13 @@ h1,h2,h3,h4 {
 .background-wrapper {
     position: relative;
     z-index: 1;
-    background-image: url("../public/assets/img/bg.png");
+    background-image: url("../public/assets/img/main/bg.png");
     background-repeat: no-repeat;
 }
 
-.star-wrapper {
-    position: relative;
-    z-index: 1;
-    background-image: url("../public/assets/img/starbg.png");
-    background-repeat: no-repeat;
-}
+//.star-wrapper {
+//    position: relative;
+//    z-index: 1;
+//    background-image: url("../public/assets/img/main/starbg.png");
+//    background-repeat: no-repeat;
+//}

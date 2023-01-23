@@ -3,11 +3,18 @@ import H2 from "./H2";
 import H3 from "./H3";
 import H4 from "./H4";
 
+export enum TitleAlign {
+    CENTER= "center",
+    RIGHT= "right",
+    LEFT= "left"
+}
+
 
 export interface TitleProps {
     text: string,
     marginBottom: number,
-    className?: string
+    className?: string,
+    align?: TitleAlign
 }
 
 export {
