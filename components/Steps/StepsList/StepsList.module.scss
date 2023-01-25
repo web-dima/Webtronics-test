@@ -1,0 +1,14 @@
+.stepsList {
+display: flex;
+  justify-content: space-between;
+
+  &__separator {
+    width: 3px;
+    margin: 114px 0;
+    background-color: #26F8E7;
+  }
+
+  &__oddList {
+    margin-top: 124px;
+  }
+}

@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Decor from "../UI/Decor";
 import About from "../components/About";
 import Technologies from "../components/Technologies";
+import Steps from "../components/Steps";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
                     <Hero/>
                     <About />
                     <Technologies />
+                    <Steps />
                 </div>
             {/*</div>*/}
         </div>
