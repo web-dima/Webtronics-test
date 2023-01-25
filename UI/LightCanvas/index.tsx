@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./LightCanvas.module.scss"
-import LightDecor from "../../types/decor.interface";
+import LightDecor from "../../utils/decor.interface";
 import Light from "../Light";
 
 interface LightCanvasProps {

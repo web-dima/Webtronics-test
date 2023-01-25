@@ -1,13 +1,19 @@
 import {FC} from "react";
 import styles from "./TechnologiesList.module.scss"
+import TechnologyInterface from "../Technology.interface";
+import Index from "../Technology";
 
 interface TechnologiesListProps {
-
+    technologies: TechnologyInterface[]
 }
 
-const TechnologiesList: FC<TechnologiesListProps> = ()=> {
+const TechnologiesList: FC<TechnologiesListProps> = ({technologies})=> {
     return(
-        <div className={styles.technologiesList}>TechnologiesList</div>
+        <div className={styles.technologiesList}>
+            {technologies.map((tech)=>{
+                return <Index key={tech.id} tech={tech}/>
+            })}
+        </div>
     )
 }
 

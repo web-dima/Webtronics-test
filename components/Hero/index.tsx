@@ -2,7 +2,8 @@ import {FC} from "react";
 import styles from "./Hero.module.scss"
 import Text from "../../UI/Text";
 import Btn from "../../UI/Btn";
-import {H1, H3, TitleAlign} from "../../UI/Titles";
+import {H1, H3} from "../../UI/Titles";
+import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 
 // const lights: LightDecor[] = [
@@ -34,7 +35,7 @@ const Hero: FC = () => {
                 <H1 marginBottom={0} text={"Developer"} />
             </div>
             <div className={styles.hero__bottom}>
-                <H3 align={TitleAlign.RIGHT} marginBottom={0} text={"Courses"} />
+                <H3 align={AlignProperty.RIGHT} marginBottom={0} text={"Courses"} />
             </div>
         </div>
     )

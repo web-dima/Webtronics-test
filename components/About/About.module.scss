@@ -2,6 +2,7 @@
   margin-top: 189px;
   &__wrapper {
     display: flex;
+    position: relative;
   }
   &__text {
     margin-left: 17px;
@@ -10,7 +11,7 @@
 
   &__decor {
     position: absolute;
-    right: 261px;
+    right: -83px;
     bottom: 0;
     font-family: 'Clash Display', sans-serif;
     font-size: 200px;

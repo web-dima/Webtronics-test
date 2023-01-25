@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import Hero from "../components/Hero";
 import Decor from "../UI/Decor";
 import About from "../components/About";
+import Technologies from "../components/Technologies";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
                     <Header/>
                     <Hero/>
                     <About />
+                    <Technologies />
                 </div>
             {/*</div>*/}
         </div>

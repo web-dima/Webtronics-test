@@ -13,8 +13,9 @@ const MentorsList: FC<MentorsListProps> = ({mentors})=> {
             {mentors.map((mentor, idx)=> {
                 if (idx === 1) {
                     return <MentorCard key={mentor.id} img={mentor.img} name={mentor.name} about={mentor.about} centerCard/>
+                } else {
+                    return <MentorCard key={mentor.id} img={mentor.img} name={mentor.name} about={mentor.about} />
                 }
-                return <MentorCard key={mentor.id} img={mentor.img} name={mentor.name} about={mentor.about} />
             })}
         </div>
     )

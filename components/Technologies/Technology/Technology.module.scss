@@ -1,0 +1,46 @@
+@use "../../../styles/vars";
+
+.technology {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px 10px;
+  clip-path: polygon(100% 0, 100% 83%, 78% 100%, 0 100%, 0 0);
+  margin-right: 24px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+
+  &__design {
+    position: absolute;
+  }
+  &__bg {
+
+    position: relative;
+    z-index: -1;
+    background: transparent;
+    border: 1px solid red;
+    border-radius: 16px;
+  }
+
+  //&:first-child:before,&:before {
+  //  content: "";
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: 0;
+  //  border-width: 0 0 39px 39px;
+  //  border-style: solid;
+  //}
+  //&:first-child:before {
+  //  border-color: transparent transparent #12163b transparent;
+  //}
+  //
+  //&:before {
+  //  border-color: transparent transparent vars.$mainBg transparent;
+  //}
+
+  &__img {
+    margin-bottom: 16px;
+  }
+}
+

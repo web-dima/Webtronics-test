@@ -1,11 +1,6 @@
 import {FC} from "react";
 import styles from "./Text.module.scss"
-
-export enum AlignProperty {
-    RIGHT= "right",
-    CENTER= "center",
-    LEFT= "left",
-}
+import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 interface TitleProps {
     text: string,
@@ -17,10 +12,10 @@ interface TitleProps {
 const Text: FC<TitleProps> = ({text,align,className,fontSize})=> {
     const style = {
         textAlign:align,
-        fontSize: fontSize ? fontSize : ""
+        fontSize: fontSize ? fontSize : "16px"
     }
     return(
-        <span className={`${styles.text} ${className? className: ""}`} style={style}>{text}</span>
+        <div className={`${styles.text} ${className? className: ""}`} style={style}>{text}</div>
     )
 }
 
