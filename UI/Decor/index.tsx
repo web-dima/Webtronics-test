@@ -2,11 +2,8 @@ import {FC} from "react";
 import styles from "./Decor.module.scss"
 import Star, {StarType} from "../Star";
 import Light from "../Light";
-// export interface LightDecor {
-//         id: number,
-//         left: number,
-//         top: number
-// }
+
+
 const Decor: FC = ()=> {
     return(
         <div className={styles.Decor}>

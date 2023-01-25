@@ -6,19 +6,20 @@ import Text from "../../../UI/Text";
 import MentorInterface from "../Mentor.interface";
 import {AlignProperty} from "../../../utils/AlignProperty.enum";
 
-interface MentorCardProps extends Omit<MentorInterface, "id">{
+interface MentorCardProps {
+    mentor: MentorInterface
     centerCard?: boolean
 }
 
-const MentorCard: FC<MentorCardProps> = ({img,name,about,centerCard})=> {
+const MentorCard: FC<MentorCardProps> = ({mentor,centerCard})=> {
 
-    const src = require("../../../public/assets/img/mentors/" + img)
+    const src = require("../../../public/assets/img/mentors/" + mentor.img)
 
     return(
         <div className={`${styles.mentorCard} ${centerCard ? styles.mentorCard__center : ""}`}>
-            <Image src={src} alt={name} width={184} height={184}/>
-            <H4 text={name} marginBottom={4} align={AlignProperty.CENTER} />
-            <Text text={about} fontSize={14}/>
+            <Image src={src} alt={mentor.name} width={184} height={184}/>
+            <H4 text={mentor.name} marginBottom={4} align={AlignProperty.CENTER} />
+            <Text text={mentor.about} fontSize={14}/>
         </div>
     )
 }

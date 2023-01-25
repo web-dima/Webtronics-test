@@ -6,20 +6,6 @@ import {H1, H3} from "../../UI/Titles";
 import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 
-// const lights: LightDecor[] = [
-//     {
-//         id: 1,
-//         left: 293,
-//         top: 499
-//     },
-//     {
-//         id: 2,
-//         left: 1424,
-//         top: 388
-//     }
-// ]
-
-
 const Hero: FC = () => {
     return (
         <div className={styles.hero}>

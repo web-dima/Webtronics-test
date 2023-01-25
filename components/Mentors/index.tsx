@@ -3,7 +3,7 @@ import styles from "./Mentors.module.scss"
 import {H3} from "../../UI/Titles";
 import Image from "next/image";
 import MentorInterface from "./Mentor.interface";
-import MentorsList from "./MentorsList/MentorsList";
+import Index from "./MentorsList";
 import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 const mentors: MentorInterface[] = [
@@ -32,7 +32,7 @@ const Mentors: FC = ()=> {
         <div className={styles.mentors}>
             <H3 text={"Mentors"} marginBottom={11} align={AlignProperty.CENTER}/>
             <Image src={"assets/img/mentors/lines.svg"} alt={"deco-line"} width={394} height={156} />
-            <MentorsList mentors={mentors} />
+            <Index mentors={mentors} />
         </div>
     )
 }
