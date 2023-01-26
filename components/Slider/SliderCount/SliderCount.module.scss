@@ -1,0 +1,11 @@
+.sliderCount {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  &>span {
+    font-size: 16px;
+    margin-left: 8px;
+    vertical-align: super;
+  }
+}

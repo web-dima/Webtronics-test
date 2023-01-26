@@ -1,0 +1,26 @@
+.FAQ {
+  margin-top: 180px;
+
+  &__title {
+    white-space: pre-wrap;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    &__info {
+      flex-basis: 40%;
+      &__text {
+        margin-bottom: 56px;
+        white-space: pre-wrap;
+      }
+
+      &__img {
+
+      }
+    }
+
+    &__accordion {
+      flex-basis: 57%;
+    }
+  }
+}

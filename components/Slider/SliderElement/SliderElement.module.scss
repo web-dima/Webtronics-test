@@ -1,0 +1,11 @@
+.sliderElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__info {
+      flex-basis: 32%;
+    }
+    &__img {
+      flex-basis: 66%;
+    }
+}

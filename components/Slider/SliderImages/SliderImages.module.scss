@@ -1,0 +1,35 @@
+.sliderImages {
+  display: flex;
+  //overflow: hidden;
+  &__bgWrapper {
+    background-image: linear-gradient(to bottom right, rgba(#15BFFDB2, .7), rgba(#9C37FDB2,.7));
+    padding: 2px;
+    max-height: 424px;
+    border-radius: 16px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+    margin-right: 24px;
+    //width: 184px;
+    //transition: width 0s linear;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__active {
+      //width: 100%;
+      //transition: width 0s linear;
+      &>img {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+      }
+    }
+
+    &__img {
+      width: 184px;
+      object-fit: cover;
+      border-radius: 16px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+      //background-color: black;
+      transition: width .3s linear;
+    }
+  }
+}

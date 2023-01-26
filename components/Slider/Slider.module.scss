@@ -1,0 +1,15 @@
+.slider {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    &__content {
+      flex-basis: 66%;
+      overflow: hidden;
+    }
+
+  }
+
+
+}

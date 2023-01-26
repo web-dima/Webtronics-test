@@ -6,6 +6,8 @@ import Decor from "../UI/Decor";
 import About from "../components/About";
 import Technologies from "../components/Technologies";
 import Steps from "../components/Steps";
+import FAQ from "../components/FAQ";
+import Review from "../components/Review";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +27,8 @@ const Home: NextPage = () => {
                     <About />
                     <Technologies />
                     <Steps />
+                    <FAQ/>
+                    <Review/>
                 </div>
             {/*</div>*/}
         </div>
