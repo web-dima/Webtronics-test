@@ -8,6 +8,7 @@ import Technologies from "../components/Technologies";
 import Steps from "../components/Steps";
 import FAQ from "../components/FAQ";
 import Review from "../components/Review";
+import Gallery from "../components/Gallery";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
                     <Steps />
                     <FAQ/>
                     <Review/>
+                    <Gallery/>
                 </div>
             {/*</div>*/}
         </div>
