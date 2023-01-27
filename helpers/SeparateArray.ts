@@ -1,4 +1,4 @@
-import StepInterface from "../components/Steps/Step.interface";
+import StepInterface from "../components/Steps/Step/types/Step.interface";
 
 export default function separateArray(array: StepInterface[]): [StepInterface[], StepInterface[]] {
     const evenArray: StepInterface[] = []

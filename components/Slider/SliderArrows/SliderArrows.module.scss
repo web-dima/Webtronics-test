@@ -7,12 +7,8 @@
     margin-right: 24px;
     cursor: pointer;
 
-    @include vars.gradientBorder(
-      rgba(255, 255, 255, 0.05),
-      rgba(#15BFFD, .7),
-      rgba(#9C37FD,.7),
-      bottom right
-    );
+    @include vars.gradientBorder(vars.$mainbg,bottom right);
+
 
     &>img {
       margin-top: 3px;

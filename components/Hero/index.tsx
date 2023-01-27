@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss"
 import Text from "../../UI/Text";
 import Btn from "../../UI/Btn";
 import {H1, H3} from "../../UI/Titles";
-import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/types/AlignProperty.enum";
 
 
 const Hero: FC = () => {

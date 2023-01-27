@@ -1,6 +1,6 @@
 import {FC, useEffect, useRef, useState} from "react";
 import styles from "./AccordionItem.module.scss"
-import AccordionItemInterface from "./AccordionItem.interface";
+import AccordionItemInterface from "./types/AccordionItem.interface";
 import {H4} from "../../../UI/Titles";
 import Text from "../../../UI/Text";
 import Image from "next/image";

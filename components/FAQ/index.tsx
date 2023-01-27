@@ -1,44 +1,17 @@
 import {FC} from "react";
 import styles from "./FAQ.module.scss"
 import {H2} from "../../UI/Titles";
-import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/types/AlignProperty.enum";
 import Text from "../../UI/Text";
 import Image from "next/image";
 import Accordion from "../Accordion";
-import AccordionItemInterface from "../Accordion/AccordionItem/AccordionItem.interface";
+import {accordionItems} from "../../data";
 
-const accordionItems:AccordionItemInterface[] = [
-    {
-        id: 1,
-        title: "What is the price?",
-        text: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
-    },
-    {
-        id: 2,
-        title: "What is the price?",
-        text: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
-    },
-    {
-        id: 3,
-        title: "What is the price?",
-        text: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
-    },
-    {
-        id: 4,
-        title: "What is the price?",
-        text: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
-    },
-    {
-        id: 5,
-        title: "What is the price?",
-        text: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too."
-    }
-]
 
 
 const FAQ: FC = ()=> {
     return(
-        <div className={styles.FAQ}  id="FAQ">
+        <div className={styles.FAQ} id="FAQ">
             <H2 text={'Frequently Asked\nQuestions'} marginBottom={56} align={AlignProperty.CENTER} className={styles.FAQ__title}/>
 
             <div className={styles.FAQ__inner}>

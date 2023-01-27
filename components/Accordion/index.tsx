@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./Accordion.module.scss"
-import AccordionItemInterface from "./AccordionItem/AccordionItem.interface";
+import AccordionItemInterface from "./AccordionItem/types/AccordionItem.interface";
 import AccordionItem from "./AccordionItem";
 
 interface AccordionProps {

@@ -1,8 +1,10 @@
-$mainBg: #0C102D;
+
 $white: #FFFFFF;
+$gradient: rgba(#15BFFD, .7), rgba(#9C37FD,.7);
+$mainbg: rgba(255, 255, 255, 0.05);
 
 
-@mixin gradientBorder($bgc, $gradientFrom,$gradientTo, $direction, $borderRadius: 16px, $onlyPT: false, $borderWidth:2px) {
+@mixin gradientBorder($bgc, $direction, $borderRadius: 16px, $onlyPT: false, $borderWidth:2px) {
   position: relative;
   z-index: 0;
   background-color: $bgc;
@@ -19,7 +21,7 @@ $white: #FFFFFF;
       padding: $borderWidth;
     }
     border-radius: $borderRadius;
-    background: linear-gradient(to $direction, $gradientFrom, $gradientTo);
+    background: linear-gradient(to $direction, $gradient);
     -webkit-mask:
             linear-gradient(#fff 0 0) content-box,
             linear-gradient(#fff 0 0);

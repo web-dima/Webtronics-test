@@ -1,12 +1,12 @@
 import {FC} from "react";
 import styles from "./Step.module.scss"
-import StepInterface from "../Step.interface";
+import StepInterface from "./types/Step.interface";
 import {H3, H4} from "../../../UI/Titles";
 import Text from "../../../UI/Text";
 import Image from "next/image";
 
 interface StepProps {
-step: StepInterface
+    step: StepInterface
 }
 
 const Step: FC<StepProps> = ({step})=> {

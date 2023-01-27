@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./StepsList.module.scss"
-import StepInterface from "../Step.interface";
+import StepInterface from "../Step/types/Step.interface";
 import separateArray from "../../../helpers/SeparateArray";
 import Step from "../Step";
 

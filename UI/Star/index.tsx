@@ -1,12 +1,9 @@
 import {FC} from "react";
 import styles from "./Star.module.scss"
 import Image from "next/image";
+import {StarType} from "./types/StartType.enum";
 
-export enum StarType {
-    LITTLE= "little",
-    NORMAL= "normal",
-    BIG= "big"
-}
+
 
 interface StarProps {
     type?: StarType,
@@ -48,7 +45,7 @@ const Star: FC<StarProps> = ({type,light,top,left})=> {
             {light ?
                 <Image className={`${styles.light}`} style={{left,top}} width={356} height={356} src={"./assets/img/main/star.svg"} alt={"starLight"} />
                 :
-                <div className={`${styles.star}`} style={starSize}>Star</div>
+                <div className={`${styles.star}`} style={starSize}/>
             }
         </>
     )

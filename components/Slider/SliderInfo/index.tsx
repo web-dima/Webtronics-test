@@ -4,11 +4,8 @@ import {SliderContext} from "../index";
 import {H4} from "../../../UI/Titles";
 import Text from "../../../UI/Text";
 
-interface SliderInfoProps {
 
-}
-
-const SliderInfo: FC<SliderInfoProps> = ()=> {
+const SliderInfo: FC = ()=> {
 
     const {texts,titles, currentSlide} = useContext(SliderContext)
 

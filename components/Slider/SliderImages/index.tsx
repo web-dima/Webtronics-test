@@ -2,11 +2,9 @@ import {FC, useContext} from "react";
 import styles from "./SliderImages.module.scss"
 import {SliderContext} from "../index";
 import Image from "next/image";
-interface SliderImagesProps {
 
-}
 
-const SliderImages: FC<SliderImagesProps> = ()=> {
+const SliderImages: FC = ()=> {
     const {images, currentSlide} = useContext(SliderContext)
 
     return (

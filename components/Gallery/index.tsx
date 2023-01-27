@@ -3,7 +3,7 @@ import styles from "./Gallery.module.scss"
 import {H2} from "../../UI/Titles";
 import Text from "../../UI/Text";
 import Image from "next/image";
-import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/types/AlignProperty.enum";
 
 const Gallery: FC = ()=> {
     return(

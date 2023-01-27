@@ -3,13 +3,8 @@
 .footer {
   margin-top: 148px;
 
-  @include vars.gradientBorder(
-    rgba(255, 255, 255, 0.05),
-    rgba(#15BFFD, .7), rgba(#9C37FD,.7),
-    bottom,
-    0,
-    true
-  );
+  @include vars.gradientBorder(vars.$mainbg,bottom, 0px, true);
+
 
   &__inner {
     padding: 33px 5px;
@@ -22,6 +17,7 @@
     margin-right: 188px;
     &__text {
       white-space: pre-wrap;
+      margin-top: 24px;
     }
   }
   &__col2 {
@@ -41,13 +37,9 @@
           margin-bottom: 0;
         }
       }
-
-
-
     }
-
-
   }
+
   &__col3 {
     flex-grow: 2;
     &__icons {

@@ -3,11 +3,7 @@ import styles from "./SliderControls.module.scss"
 import SliderCount from "../SliderCount";
 import SliderArrows from "../SliderArrows";
 
-interface SliderControlsProps {
-
-}
-
-const SliderControls: FC<SliderControlsProps> = ()=> {
+const SliderControls: FC = ()=> {
     return(
         <div className={styles.sliderControls}>
             <SliderCount />

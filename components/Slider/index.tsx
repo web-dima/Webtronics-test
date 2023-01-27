@@ -1,22 +1,14 @@
-import {createContext, FC, useContext, useEffect, useState} from "react";
+import {createContext, FC, useEffect, useState} from "react";
 import styles from "./Slider.module.scss"
-import SlideInterface from "./Slide.interface";
+import SlideInterface from "./types/Slide.interface";
 import SliderControls from "./SliderControls";
 import SliderInfo from "./SliderInfo";
-import Index from "./SliderImages";
 import SliderImages from "./SliderImages";
+import {SliderContextInterface} from "./types/SliderContext.interface";
 
 export const SliderContext = createContext({} as SliderContextInterface)
 
-export interface SliderContextInterface {
-    images: string[],
-    texts: string[],
-    titles: string[],
-    amountSlides: number,
-    currentSlide: number,
-    nextSlide: Function,
-    prevSlide: Function
-}
+
 
 
 interface SliderProps {

@@ -4,7 +4,7 @@ import Image from "next/image";
 import {SliderContext} from "../index";
 
 const SliderArrows: FC = ()=> {
-    const {currentSlide,nextSlide,prevSlide} = useContext(SliderContext)
+    const {nextSlide,prevSlide} = useContext(SliderContext)
 
     const nextClickHandler = ()=> {
         nextSlide()

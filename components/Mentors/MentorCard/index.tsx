@@ -3,8 +3,8 @@ import styles from "./MentorCard.module.scss"
 import Image from "next/image";
 import {H4} from "../../../UI/Titles";
 import Text from "../../../UI/Text";
-import MentorInterface from "../Mentor.interface";
-import {AlignProperty} from "../../../UI/utils/AlignProperty.enum";
+import MentorInterface from "./types/Mentor.interface";
+import {AlignProperty} from "../../../UI/types/AlignProperty.enum";
 
 interface MentorCardProps {
     mentor: MentorInterface

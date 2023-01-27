@@ -5,11 +5,7 @@ import Text from "../../../UI/Text";
 import Input from "../../../UI/Input";
 import Btn from "../../../UI/Btn";
 
-interface ContactFromProps {
-
-}
-
-const ContactFrom: FC<ContactFromProps> = ()=> {
+const ContactFrom: FC = ()=> {
     return(
         <div className={styles.contactFrom}>
             <H2 text={"Contact us"} marginBottom={16}/>

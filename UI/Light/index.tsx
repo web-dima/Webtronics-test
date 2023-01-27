@@ -11,7 +11,7 @@ const Light: FC<LightProps> = ({top,left})=> {
         top,left
     }
     return(
-        <div className={styles.light} style={style}>1</div>
+        <div className={styles.light} style={style}/>
     )
 }
 

@@ -18,13 +18,13 @@ const Footer: FC = ()=> {
                     <H5 marginBottom={24} text={"Company"}/>
                     <div className={styles.footer__col2__lists}>
                         <ul className={styles.footer__col2__lists__list}>
-                            <NavLink text={"About Us"} to={"about"}/>
-                            <NavLink text={"Steps"} to={"steps"}/>
-                            <NavLink text={"FAQs"} to={"FAQ"}/>
+                            <NavLink text={"About Us"} to={"about"} fontSize={14}/>
+                            <NavLink text={"Steps"} to={"steps"} fontSize={14}/>
+                            <NavLink text={"FAQs"} to={"FAQ"} fontSize={14}/>
                         </ul>
                         <ul className={styles.footer__col2__lists__list}>
-                            <NavLink text={"Review"} to={"review"}/>
-                            <NavLink text={"Gallery"} to={"gallery"}/>
+                            <NavLink text={"Review"} to={"review"} fontSize={14}/>
+                            <NavLink text={"Gallery"} to={"gallery"} fontSize={14}/>
                         </ul>
                     </div>
                 </div>

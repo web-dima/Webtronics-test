@@ -1,7 +1,8 @@
 import {FC} from "react";
 import styles from "./Decor.module.scss"
-import Star, {StarType} from "../Star";
+import Star from "../Star";
 import Light from "../Light";
+import {StarType} from "../Star/types/StartType.enum";
 
 
 const Decor: FC = ()=> {
