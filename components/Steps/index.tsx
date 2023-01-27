@@ -3,7 +3,7 @@ import styles from "./Steps.module.scss"
 import {H2} from "../../UI/Titles";
 import StepsList from "./StepsList";
 import StepInterface from "./Step.interface";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const steps: StepInterface[] = [
     {

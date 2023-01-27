@@ -4,7 +4,7 @@ import {H3} from "../../UI/Titles";
 import Image from "next/image";
 import MentorInterface from "./Mentor.interface";
 import Index from "./MentorsList";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const mentors: MentorInterface[] = [
     {

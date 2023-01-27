@@ -3,7 +3,7 @@ import styles from "./Review.module.scss"
 import {H2} from "../../UI/Titles";
 import Slider from "../Slider";
 import SlideInterface from "../Slider/Slide.interface";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const slides: SlideInterface[] = [
     {

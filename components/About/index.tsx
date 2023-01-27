@@ -3,7 +3,7 @@ import styles from "./About.module.scss"
 import {H2} from "../../UI/Titles";
 import Mentors from "../Mentors";
 import Text from "../../UI/Text";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const About: FC = ()=> {
     return(

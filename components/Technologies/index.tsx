@@ -4,7 +4,7 @@ import {H2} from "../../UI/Titles";
 import Text from "../../UI/Text";
 import TechnologiesList from "./TechnologiesList";
 import TechnologyInterface from "./Technology.interface";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const technologies: TechnologyInterface[] = [
     {

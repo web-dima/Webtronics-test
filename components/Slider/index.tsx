@@ -10,35 +10,40 @@ export const SliderContext = createContext({} as SliderContextInterface)
 
 export interface SliderContextInterface {
     images: string[],
-    // setImages: Function,
     texts: string[],
-    // setTexts: Function,
     titles: string[],
-    // setTitles: Function,
     amountSlides: number,
     currentSlide: number,
-    setCurSlide: Function
+    nextSlide: Function,
+    prevSlide: Function
 }
 
 
 interface SliderProps {
-    className?: string,
     slides: SlideInterface[]
 }
 
-const Slider: FC<SliderProps> = ({className,slides})=> {
+const Slider: FC<SliderProps> = ({slides})=> {
 
     const [images, setImages] = useState<string[]>()
     const [text, setTexts] = useState<string[]>()
     const [title, setTitles] = useState<string[]>()
     const [currentSlide, setCurrentSlide] = useState<number>(1)
 
-    const setCurSlide = () => {
+    const nextSlide = () => {
       if (currentSlide < slides.length) {
           setCurrentSlide(currentSlide + 1)
       } else {
           setCurrentSlide(1)
       }
+    }
+
+    const prevSlide = () => {
+        if (currentSlide === 1) {
+            setCurrentSlide(3)
+        } else {
+            setCurrentSlide(currentSlide - 1)
+        }
     }
 
     useEffect(() => {
@@ -60,14 +65,12 @@ const Slider: FC<SliderProps> = ({className,slides})=> {
             <SliderContext.Provider
                 value={{
                     images: images ? images: [],
-                    // setImages: setImages,
                     texts: text ? text: [],
-                    // setTexts: setTexts,
                     titles: title ? title: [],
-                    // setTitles: setTitles,
                     amountSlides: slides.length,
                     currentSlide: currentSlide,
-                    setCurSlide: setCurSlide
+                    nextSlide,
+                    prevSlide
                 }}
             >
                 <div className={styles.slider__inner}>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import {H4} from "../../../UI/Titles";
 import Text from "../../../UI/Text";
 import MentorInterface from "../Mentor.interface";
-import {AlignProperty} from "../../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../../UI/utils/AlignProperty.enum";
 
 interface MentorCardProps {
     mentor: MentorInterface

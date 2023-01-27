@@ -3,7 +3,7 @@ import H2 from "./H2";
 import H3 from "./H3";
 import H4 from "./H4";
 import H5 from "./H5";
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../utils/AlignProperty.enum";
 
 export interface TitleProps {
     text: string,

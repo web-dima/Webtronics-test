@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from "./Text.module.scss"
-import {AlignProperty} from "../../utils/AlignProperty.enum";
+import {AlignProperty} from "../utils/AlignProperty.enum";
 
 interface TitleProps {
     text: string,

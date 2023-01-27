@@ -1,7 +1,7 @@
 import {FC} from "react";
 import styles from "./H2.module.scss"
 import {TitleProps} from "../index";
-import {AlignProperty} from "../../../utils/AlignProperty.enum";
+import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 
 const H2: FC<TitleProps> = ({text,marginBottom,className, align})=> {
