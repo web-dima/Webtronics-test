@@ -1,0 +1,63 @@
+@use "../../styles/vars";
+
+.footer {
+  margin-top: 148px;
+
+  @include vars.gradientBorder(
+    rgba(255, 255, 255, 0.05),
+    rgba(#15BFFD, .7), rgba(#9C37FD,.7),
+    bottom,
+    0,
+    true
+  );
+
+  &__inner {
+    padding: 33px 5px;
+    max-width: 1265px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__col1 {
+    margin-right: 188px;
+    &__text {
+      white-space: pre-wrap;
+    }
+  }
+  &__col2 {
+    flex-grow: 1;
+    margin-right: 165px;
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      &__list {
+        &>a {
+          display: block;
+          margin-bottom: 16px;
+        }
+
+        &>a:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+
+
+    }
+
+
+  }
+  &__col3 {
+    flex-grow: 2;
+    &__icons {
+      &>img {
+        margin-right: 24px;
+      }
+
+      &>img:last-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}

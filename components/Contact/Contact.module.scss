@@ -1,0 +1,17 @@
+@use "../../styles/vars";
+
+.contact {
+  margin-top: 181px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 10px;
+
+
+  @include vars.gradientBorder(
+    rgba(255, 255, 255, 0.05),
+    rgba(#15BFFD, .7), rgba(#9C37FD,.7),
+    bottom
+  );
+
+}

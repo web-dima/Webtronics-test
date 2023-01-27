@@ -21,7 +21,7 @@ const Gallery: FC = ()=> {
                         <Image className={styles.gallery__right__images__last} src={require("../../public/assets/img/gallery/dev3.jpg")} alt={"developer-4"} width={288} height={209} />
                     </div>
                     <div className={styles.gallery__right__text}>
-                        <Text className={""} text={"If you would like to learn web development and get a job in the tech industry, you are going to LOVE this course! Learn HTML, CSS, JavaScript, Bootstrap and more with over 15 hours of HD video tutorials! This course was designed to be extremely beginner friendly. We will begin with the very basics of HTML and build a simple web page."}/>
+                        <Text text={"If you would like to learn web development and get a job in the tech industry, you are going to LOVE this course! Learn HTML, CSS, JavaScript, Bootstrap and more with over 15 hours of HD video tutorials! This course was designed to be extremely beginner friendly. We will begin with the very basics of HTML and build a simple web page."}/>
                     </div>
                 </div>
             </div>

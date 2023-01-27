@@ -13,21 +13,25 @@ const SliderImages: FC<SliderImagesProps> = ()=> {
         <div className={styles.sliderImages}>
             {images.map((img,idx)=> {
                 if (idx === currentSlide - 1) {
-                    return <div className={`${styles.sliderImages__bgWrapper} ${styles.sliderImages__bgWrapper__active}`}>
+                    return <div
+                        className={`${styles.sliderImages__bgWrapper} ${styles.sliderImages__bgWrapper__active}`}
+                        key={img}
+                    >
                         <Image
                             className={`${styles.sliderImages__bgWrapper__img}`}
                             src={require("../../../public/assets/img/reviews/" + img)}
                             alt={img}
-                            key={img}
                         />
                     </div>
                 }
-                return <div className={styles.sliderImages__bgWrapper}>
+                return <div
+                    className={styles.sliderImages__bgWrapper}
+                    key={img}
+                >
                     <Image
                         className={styles.sliderImages__bgWrapper__img}
                         src={require("../../../public/assets/img/reviews/" + img)}
                         alt={img}
-                        key={img}
                     />
                 </div>
             })}

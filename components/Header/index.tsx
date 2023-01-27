@@ -1,21 +1,42 @@
 import {FC} from "react";
 import styles from "./Header.module.scss"
 import Image from "next/image";
+import NavLink from "../../UI/NavLink";
 
 const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header__inner}>
                 <div>
-                    <Image src={'./assets/img/header/logo.svg'} alt="logo" width={169} height={33}/>
+                    <Image src={'./assets/img/main/logo.svg'} alt="logo" width={169} height={33}/>
                 </div>
                 <nav>
                     <ul className={styles.header__nav}>
-                        <li className={styles.header__nav__item}><a href="#">About</a></li>
-                        <li className={styles.header__nav__item}><a href="#">Programs</a></li>
-                        <li className={styles.header__nav__item}><a href="#">Steps</a></li>
-                        <li className={styles.header__nav__item}><a href="#">Questions</a></li>
-                        <li className={styles.header__nav__item}><a href="#">Get in touch</a></li>
+                        <NavLink
+                            className={styles.header__nav__item}
+                            text={"About"}
+                            to={"about"}
+                        />
+                        <NavLink
+                            className={styles.header__nav__item}
+                            text={"Programs"}
+                            to={"technologies"}
+                        />
+                        <NavLink
+                            className={styles.header__nav__item}
+                            text={"Steps"}
+                            to={"steps"}
+                        />
+                        <NavLink
+                            className={styles.header__nav__item}
+                            text={"Questions"}
+                            to={"FAQ"}
+                        />
+                        <NavLink
+                            className={styles.header__nav__item}
+                            text={"Get in touch"}
+                            to={"contact"}
+                        />
                     </ul>
                 </nav>
             </div>

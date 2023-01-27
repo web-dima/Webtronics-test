@@ -1,0 +1,25 @@
+.link {
+  padding-bottom: 3px;
+  position: relative;
+  &:hover {
+    &>div {
+      height: 3px;
+      background-color: #fff;
+      bottom: -6px;
+    }
+  }
+
+  &__line {
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background-color .2s linear;
+  }
+
+  &>span {
+    cursor: pointer;
+  }
+}

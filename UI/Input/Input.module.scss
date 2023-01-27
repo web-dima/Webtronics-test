@@ -1,0 +1,73 @@
+@use "../../styles/vars";
+
+.inputBlock {
+  color: white;
+  margin-bottom: 16px;
+
+  transition: all .2s linear;
+  @include vars.gradientBorder(
+    rgba(255, 255, 255, 0.05),
+    rgba(#15BFFD, .7), rgba(#9C37FD,.7),
+    bottom,
+    8px
+  );
+
+  &__text {
+    margin-top: 4px;
+    //color: white;
+  }
+
+  &:active {
+    color: white;
+  }
+
+  &.disabled{
+    pointer-events: none;
+    border: 1px solid #636363;
+    background-color: rgba(#fff, .05);
+    &:before {
+      background: transparent;
+    }
+    &>input {
+      &::placeholder {
+        color: #636363
+      }
+    }
+  }
+
+  &.error {
+    background: transparent;
+    color: white;
+    &:before {
+      background: transparent;
+    }
+    &>input {
+      background-color: rgba(#FFA5A5, .2);
+      color: white;
+      border: 1px solid #FD4646;
+      border-radius: 8px;
+      &::placeholder {
+        color: white;
+      }
+    }
+
+  }
+
+  &>input {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font-style: inherit;
+    font-size: inherit;
+    line-height: 140%;
+    font-family: "Inter", sans-serif;
+    color: inherit;
+    padding: 24px;
+
+    &::placeholder {
+      color: #A2CBFB;
+    }
+
+  }
+}

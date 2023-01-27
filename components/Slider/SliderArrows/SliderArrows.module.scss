@@ -1,49 +1,25 @@
+@use "../../../styles/vars";
+
 .sliderArrows {
   display: flex;
   &__arrow {
-    position: relative;
     padding: 10px 16px;
     margin-right: 24px;
-    z-index: 0;
     cursor: pointer;
-    //border-radius: 8px;
-    //background:
-    //background-color: rgba(255, 255, 255, 0.05);
-    //background-image: linear-gradient(to right, rgba(#15BFFDB2, .7), rgba(#9C37FDB2,.7));
-    //border: 5px solid transparent;
-    //background-origin: border-box;
-    //background-clip: padding-box, border-box;
-    //display: inline-flex;
+
+    @include vars.gradientBorder(
+      rgba(255, 255, 255, 0.05),
+      rgba(#15BFFD, .7),
+      rgba(#9C37FD,.7),
+      bottom right
+    );
+
     &>img {
       margin-top: 3px;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-      padding: 2px;
-      border-radius: 16px;
-      background: linear-gradient(to bottom right, rgba(#15BFFDB2, .7), rgba(#9C37FDB2,.7));
-      -webkit-mask:
-              linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
-      mask:
-              linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
     }
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &__left {
-
-    }
-    &__right {
-
     }
   }
 }

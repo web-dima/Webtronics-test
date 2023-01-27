@@ -31,7 +31,7 @@ const technologies: TechnologyInterface[] = [
 
 const Technologies: FC = ()=> {
     return(
-        <div className={styles.technologies}>
+        <div className={styles.technologies} id="programs">
             <div className={styles.technologies__wrapper}>
                 <H2 text={"Programming technologies"} marginBottom={16} align={AlignProperty.CENTER}/>
                 <Text className={styles.technologies__text} text={" By the end, you’ll have the portfolio and interview skills you need to start your new career."} align={AlignProperty.CENTER}/>

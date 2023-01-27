@@ -1,2 +1,32 @@
 $mainBg: #0C102D;
 $white: #FFFFFF;
+
+
+@mixin gradientBorder($bgc, $gradientFrom,$gradientTo, $direction, $borderRadius: 16px, $onlyPT: false, $borderWidth:2px) {
+  position: relative;
+  z-index: 0;
+  background-color: $bgc;
+  border-radius: $borderRadius;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    @if $onlyPT {
+      padding-top: $borderWidth;
+    } @else {
+      padding: $borderWidth;
+    }
+    border-radius: $borderRadius;
+    background: linear-gradient(to $direction, $gradientFrom, $gradientTo);
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}

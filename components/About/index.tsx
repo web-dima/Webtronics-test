@@ -7,7 +7,7 @@ import {AlignProperty} from "../../utils/AlignProperty.enum";
 
 const About: FC = ()=> {
     return(
-        <div className={styles.about}>
+        <div className={styles.about} id="about">
             <H2 text={"About Us"} marginBottom={56} align={AlignProperty.CENTER}/>
             <div className={styles.about__wrapper}>
                 <Mentors />

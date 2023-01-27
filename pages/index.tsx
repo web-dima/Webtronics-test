@@ -9,6 +9,8 @@ import Steps from "../components/Steps";
 import FAQ from "../components/FAQ";
 import Review from "../components/Review";
 import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -31,7 +33,9 @@ const Home: NextPage = () => {
                     <FAQ/>
                     <Review/>
                     <Gallery/>
+                    <Contact/>
                 </div>
+                <Footer />
             {/*</div>*/}
         </div>
     </>
