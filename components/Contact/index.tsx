@@ -4,7 +4,7 @@ import ContactFrom from "./ContactForm";
 
 const Contact: FC = ()=> {
     return(
-        <div className={styles.contact}>
+        <div className={styles.contact} id="contact">
             <ContactFrom />
         </div>
     )

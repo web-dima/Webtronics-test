@@ -38,7 +38,7 @@ const accordionItems:AccordionItemInterface[] = [
 
 const FAQ: FC = ()=> {
     return(
-        <div className={styles.FAQ}>
+        <div className={styles.FAQ}  id="FAQ">
             <H2 text={'Frequently Asked\nQuestions'} marginBottom={56} align={AlignProperty.CENTER} className={styles.FAQ__title}/>
 
             <div className={styles.FAQ__inner}>

@@ -1,16 +1,19 @@
 .star {
+
+  background: #15BFFD;
   position: absolute;
   z-index: -1;
-  background: #15BFFD;
   transform: rotate(67deg);
-  //transform: matrix(-0.99, 0.17, 0.17, 0.99, 0, 0);
   clip-path: polygon(50% 0%, 61% 34%, 98% 35%, 66% 57%, 79% 91%, 49% 67%, 21% 91%, 35% 55%, 2% 35%, 38% 35%);
   font-size: 0;
+
 }
 
 .light {
-  //box-shadow: 0 0 10px #2617FD, 0 0 40px #2617FD, 0 0 80px #2617FD;
-  filter: drop-shadow(0 0 8px #2617FD);
-  //filter: drop-shadow(0 0 40px #2617FD);
-  //filter: drop-shadow(0 0 80px #2617FD);
+  position: absolute;
+  z-index: -1;
+  transform: rotate(67deg);
+  clip-path: polygon(50% 0%, 61% 34%, 98% 35%, 66% 57%, 79% 91%, 49% 67%, 21% 91%, 35% 55%, 2% 35%, 38% 35%);
+  font-size: 0;
+  background: none;
 }

@@ -22,21 +22,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="./assets/img/main/favicon.ico" />
       </Head>
         <div className="background-wrapper">
-            {/*<div className="star-wrapper">*/}
-                <div className="container">
-                    <Decor />
-                    <Header/>
-                    <Hero/>
-                    <About />
-                    <Technologies />
-                    <Steps />
-                    <FAQ/>
-                    <Review/>
-                    <Gallery/>
-                    <Contact/>
-                </div>
-                <Footer />
-            {/*</div>*/}
+            <Decor />
+            <div className="container">
+                <Header/>
+                <Hero/>
+                <About />
+                <Technologies />
+                <Steps />
+                <FAQ/>
+                <Review/>
+                <Gallery/>
+                <Contact/>
+            </div>
+            <Footer />
         </div>
     </>
   )

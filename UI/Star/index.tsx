@@ -1,5 +1,6 @@
 import {FC} from "react";
 import styles from "./Star.module.scss"
+import Image from "next/image";
 
 export enum StarType {
     LITTLE= "little",
@@ -21,30 +22,35 @@ const Star: FC<StarProps> = ({type,light,top,left})=> {
         top,
         left
     }
-    switch (type) {
-        case StarType.BIG: {
-            starSize.width = 35.55
-            starSize.height = 40.63
-            break
-        }
-        case StarType.NORMAL: {
-            break
-        }
-        case StarType.LITTLE: {
-            starSize.width = 11.5
-            starSize.height = 13.15
-            break
-        }
-        default: {
-            break
+    if (!light) {
+        switch (type) {
+            case StarType.BIG: {
+                starSize.width = 35.55
+                starSize.height = 40.63
+                break
+            }
+            case StarType.NORMAL: {
+                break
+            }
+            case StarType.LITTLE: {
+                starSize.width = 11.5
+                starSize.height = 13.15
+                break
+            }
+            default: {
+                break
+            }
         }
     }
 
     return(
-        <div className={light ? styles.light: ""}>
-            <div className={`${styles.star}`} style={starSize}>Star</div>
-        </div>
-
+        <>
+            {light ?
+                <Image className={`${styles.light}`} style={{left,top}} width={356} height={356} src={"./assets/img/main/star.svg"} alt={"starLight"} />
+                :
+                <div className={`${styles.star}`} style={starSize}>Star</div>
+            }
+        </>
     )
 }
 

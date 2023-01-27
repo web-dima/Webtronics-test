@@ -3,15 +3,14 @@
   background: rgba(255, 255, 255, 0.05);
   margin-bottom: 24px;
   overflow: hidden;
-  //display: flex;
-  //justify-content: space-between;
   clip-path: polygon(8% 0, 100% 0, 100% 80%, 94% 100%, 0 100%, 0 14%);
   max-height: 76px;
   transition: all .2s linear;
+
   &__open {
-    max-height: 200px;
-    //background-color: red;
-    //transition: max-height .2s linear;
+    &>.text {
+      user-select: auto;
+    }
   }
 
   &:last-child {
@@ -25,9 +24,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__text {
-    margin-top: 16px;
-    max-width: 590px;
-    width: 100%;
-  }
+}
+
+.text {
+  margin-top: 16px;
+  max-width: 590px;
+  width: 100%;
+  user-select: none;
 }

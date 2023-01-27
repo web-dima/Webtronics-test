@@ -29,7 +29,7 @@ const slides: SlideInterface[] = [
 
 const Review: FC = ()=> {
     return(
-        <div className={styles.review}>
+        <div className={styles.review} id="review">
             <H2 text={"Review"} marginBottom={48} align={AlignProperty.CENTER}/>
             <Slider slides={slides}/>
         </div>

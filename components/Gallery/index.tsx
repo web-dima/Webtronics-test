@@ -7,7 +7,7 @@ import {AlignProperty} from "../../UI/utils/AlignProperty.enum";
 
 const Gallery: FC = ()=> {
     return(
-        <div className={styles.gallery}>
+        <div className={styles.gallery}  id="gallery">
             <H2 text={"Gallery"} marginBottom={48} align={AlignProperty.CENTER}/>
             <div className={styles.gallery__inner}>
                 <div className={styles.gallery__left}>

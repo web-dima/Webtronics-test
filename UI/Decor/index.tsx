@@ -13,9 +13,9 @@ const Decor: FC = ()=> {
             <Star type={StarType.LITTLE} top={2678} left={397.5}/>
             <Star type={StarType.NORMAL} top={3034} left={1430.52}/>
             <Star type={StarType.LITTLE} top={3086} left={1511.5}/>
-            <Star type={StarType.LITTLE} top={6274} left={578.12}/>
-            <Star type={StarType.LITTLE} top={6177.23} left={1098.34}/>
-            <Star type={StarType.BIG} top={6022.49} left={1297.09}/>
+            <Star type={StarType.LITTLE} top={6528} left={578.12}/>
+            <Star type={StarType.LITTLE} top={6451.23} left={1098.34}/>
+            <Star type={StarType.BIG} top={6317.49} left={1297.09}/>
             <Star type={StarType.LITTLE} top={4372.93} left={1198.93}/>
             <Star type={StarType.NORMAL} top={4877} left={1673.58}/>
             <Star type={StarType.NORMAL} top={4321.4} left={458.37}/>

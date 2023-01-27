@@ -46,7 +46,7 @@ const steps: StepInterface[] = [
 
 const Steps: FC = ()=> {
     return(
-        <div className={styles.steps}>
+        <div className={styles.steps} id="steps">
             <H2 text={"Steps"} marginBottom={56} align={AlignProperty.CENTER}/>
             <StepsList  steps={steps}/>
         </div>
