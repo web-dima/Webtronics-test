@@ -9,6 +9,6 @@ enum ValidationMessages {
 
 export const contactSchema = yup.object({
     name: yup.string().required(ValidationMessages.REQUIRED_ERROR_MESSAGE),
-    phone: yup.string().matches(phoneRegExp, ValidationMessages.PHONE_ERROR_MESSAGE).min(10).max(11).required(ValidationMessages.REQUIRED_ERROR_MESSAGE),
+    phone: yup.string().matches(phoneRegExp, ValidationMessages.PHONE_ERROR_MESSAGE).min(10).max(12).required(ValidationMessages.REQUIRED_ERROR_MESSAGE),
     email: yup.string().email(ValidationMessages.EMAIL_ERROR_MESSAGE).required(ValidationMessages.REQUIRED_ERROR_MESSAGE)
 }).required();
