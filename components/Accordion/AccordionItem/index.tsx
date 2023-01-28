@@ -28,9 +28,9 @@ const AccordionItem: FC<AccordionItemProps> = ({item})=> {
                 <H4 text={item.title} marginBottom={0}/>
                 {open
                     ?
-                    <Image src={"./assets/img/FAQ/p.svg"} alt={"toggle-mark"} width={30} height={30} />
+                    <Image src={"./assets/img/FAQ/plus.svg"} alt={"toggle-mark"} width={30} height={30} />
                     :
-                    <Image src={"./assets/img/FAQ/m.svg"} alt={"toggle-mark"} width={22} height={5} />
+                    <Image src={"./assets/img/FAQ/minus.svg"} alt={"toggle-mark"} width={22} height={5} />
                 }
             </div>
             <div ref={TextRef} className={styles.text}>
