@@ -1,11 +1,11 @@
-@use "../../styles/vars";
+@use "../../public/assets/styles/vars";
 
 .inputBlock {
   color: vars.$white;
   margin-bottom: 16px;
 
   transition: all .2s linear;
-  @include vars.gradientBorder(vars.$mainbg,bottom, 8px);
+  @include vars.gradientBorder(vars.$mainBg,bottom, 8px);
 
 
   &__text {

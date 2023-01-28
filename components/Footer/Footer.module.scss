@@ -1,9 +1,9 @@
-@use "../../styles/vars";
+@use "../../public/assets/styles/vars";
 
 .footer {
   margin-top: 148px;
 
-  @include vars.gradientBorder(vars.$mainbg,bottom, 0px, true);
+  @include vars.gradientBorder(vars.$mainBg,bottom, 0px, true);
 
 
   &__inner {

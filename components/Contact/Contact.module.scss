@@ -1,4 +1,4 @@
-@use "../../styles/vars";
+@use "../../public/assets/styles/vars";
 
 .contact {
   margin-top: 181px;
@@ -8,6 +8,6 @@
   padding: 65px 10px;
 
 
-  @include vars.gradientBorder(vars.$mainbg,bottom);
+  @include vars.gradientBorder(vars.$mainBg,bottom);
 
 }

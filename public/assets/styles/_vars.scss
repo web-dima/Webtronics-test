@@ -1,7 +1,7 @@
 
 $white: #FFFFFF;
 $gradient: rgba(#15BFFD, .7), rgba(#9C37FD,.7);
-$mainbg: rgba(255, 255, 255, 0.05);
+$mainBg: rgba(255, 255, 255, 0.05);
 
 
 @mixin gradientBorder($bgc, $direction, $borderRadius: 16px, $onlyPT: false, $borderWidth:2px) {
